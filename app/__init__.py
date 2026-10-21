@@ -1,0 +1,1 @@
+"""MedivaCare API application package."""

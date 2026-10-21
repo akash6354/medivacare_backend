@@ -1,0 +1,65 @@
+# ---- Core framework ----
+fastapi
+uvicorn[standard]
+starlette
+
+# ---- Data validation & settings ----
+pydantic
+pydantic-settings
+email-validator
+python-dotenv
+
+# ---- SQL / ORM / migrations ----
+sqlalchemy
+alembic
+
+# ---- Database drivers (pick what you use) ----
+psycopg[binary]        # PostgreSQL (psycopg 3)
+asyncpg              # PostgreSQL async
+pymysql              # MySQL
+asyncmy              # MySQL async
+aiosqlite            # SQLite async
+sqlite-utils         # SQLite helpers
+
+# ---- Auth / security ----
+passlib[bcrypt]
+python-jose[cryptography]
+pyjwt                # alternative to python-jose
+
+# ---- HTTP / async ----
+httpx
+aiofiles
+requests
+
+# ---- Forms / uploads ----
+python-multipart
+
+# ---- Templating (optional) ----
+jinja2
+
+# ---- CORS / middleware helpers ----
+itsdangerous
+
+# ---- Testing ----
+pytest
+pytest-asyncio
+httpx
+pytest-cov
+faker
+
+# ---- Linting / formatting (dev) ----
+ruff
+black
+isort
+mypy
+
+# ---- Task queue (optional) ----
+celery
+redis
+rq
+
+# ---- Email (optional) ----
+fastapi-mail
+
+# ---- Payments (optional, your project uses this) ----
+razorpay
