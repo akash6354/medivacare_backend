@@ -1,65 +1,33 @@
-# ---- Core framework ----
+# Core framework
 fastapi
 uvicorn[standard]
 starlette
 slowapi
-# ---- Data validation & settings ----
+
+# Data validation & settings
 pydantic
 pydantic-settings
 email-validator
 python-dotenv
 
-# ---- SQL / ORM / migrations ----
+# SQL / ORM / migrations
 sqlalchemy
 alembic
+psycopg[binary]
 
-# ---- Database drivers (pick what you use) ----
-psycopg[binary]        # PostgreSQL (psycopg 3)
-asyncpg              # PostgreSQL async
-pymysql              # MySQL
-asyncmy              # MySQL async
-aiosqlite            # SQLite async
-sqlite-utils         # SQLite helpers
-
-# ---- Auth / security ----
+# Auth / security
 passlib[bcrypt]
 python-jose[cryptography]
-pyjwt                # alternative to python-jose
 
-# ---- HTTP / async ----
+# HTTP / async / files
 httpx
 aiofiles
-requests
 
-# ---- Forms / uploads ----
+# Forms / uploads (required for File/Form data in FastAPI)
 python-multipart
 
-# ---- Templating (optional) ----
-jinja2
-
-# ---- CORS / middleware helpers ----
+# CORS / middleware helpers
 itsdangerous
 
-# ---- Testing ----
-pytest
-pytest-asyncio
-httpx
-pytest-cov
-faker
-
-# ---- Linting / formatting (dev) ----
-ruff
-black
-isort
-mypy
-
-# ---- Task queue (optional) ----
-celery
-redis
-rq
-
-# ---- Email (optional) ----
-fastapi-mail
-
-# ---- Payments (optional, your project uses this) ----
+# Payments (Razorpay for your project)
 razorpay
