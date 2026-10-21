@@ -1,33 +1,18 @@
-# Core framework
-fastapi
-uvicorn[standard]
-starlette
-slowapi
-PyJWT
-# Data validation & settings
-pydantic
-pydantic-settings
-email-validator
-python-dotenv
+# Runtime dependencies (kept in sync with pyproject.toml)
+alembic>=1.13,<2.0
+email-validator>=2.2,<3.0
+fastapi>=0.115,<1.0
+PyJWT>=2.9,<3.0
+psycopg[binary]>=3.2,<4.0
+python-dotenv>=1.0,<2.0
+python-multipart>=0.0.20,<1.0
+razorpay>=1.4,<2.0
+pydantic-settings>=2.6,<3.0
+pwdlib[argon2]>=0.2,<1.0
+sqlalchemy>=2.0,<3.0
+slowapi>=0.1.9,<1.0
+uvicorn[standard]>=0.32,<1.0
 
-# SQL / ORM / migrations
-sqlalchemy
-alembic
-psycopg[binary]
-
-# Auth / security
-passlib[bcrypt]
-python-jose[cryptography]
-
-# HTTP / async / files
-httpx
-aiofiles
-
-# Forms / uploads (required for File/Form data in FastAPI)
-python-multipart
-
-# CORS / middleware helpers
-itsdangerous
-
-# Payments (Razorpay for your project)
-razorpay
+# Development and test dependencies
+httpx>=0.27,<1.0
+pytest>=8.3,<9.0
