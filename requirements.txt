@@ -3,7 +3,7 @@ fastapi
 uvicorn[standard]
 starlette
 slowapi
-
+PyJWT
 # Data validation & settings
 pydantic
 pydantic-settings
