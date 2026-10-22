@@ -12,8 +12,8 @@ PROJECT_ROOT = Path(__file__).resolve().parents[3]
 class Settings(BaseSettings):
     app_env: str = "development"
     api_v1_prefix: str = "/api/v1"
-    database_url: str = "postgresql+psycopg://mediva:medivacare_dev@localhost:5432/medivacare"
-    frontend_origins: str = "http://localhost:5173"
+    database_url: str = "https://medivacare-backend.vercel.app"
+    frontend_origins: str = "https://medivacare.vercel.app/"
     secret_key: SecretStr = SecretStr("")
     access_token_expire_minutes: int = Field(default=30, ge=5, le=1440)
     delivery_fee: Decimal = Field(default=Decimal("40.00"), ge=0, decimal_places=2)
